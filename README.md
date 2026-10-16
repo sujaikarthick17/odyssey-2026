@@ -27,6 +27,10 @@ HTML5, CSS3, and vanilla JavaScript ES modules. Event data comes from the Render
 
 **No framework, dependency installation, or build step is required.**
 
+## Performance
+
+The optimized homepage scored **99 in mobile Lighthouse**, with **100 for accessibility, best practices, and SEO**. Fonts are self-hosted, the crown image uses WebP, and featured events load as visitors approach the section. See the [performance measurements](docs/performance.md) for the audit settings, before/after results, and functional checks.
+
 ## Run locally
 
 ```sh

@@ -40,7 +40,7 @@ ctrl-alt-fest/
   README.md
 ```
 
-Hero artwork is CSS, so it needs no bitmap download. Event photos use the API's image URLs and alt text. Failed images receive a placeholder. Google Fonts provides Barlow Condensed and DM Sans with system fallbacks and `display=swap`.
+The hero combines CSS playing cards with an optimized WebP crown image. Event photos use the API's image URLs and alt text. Failed images receive a placeholder. Anton, Barlow Condensed, DM Sans, and Cormorant Garamond are self-hosted as WOFF2 files with system fallbacks and `font-display: swap`; their license notices are included in `assets/fonts/`.
 
 ## Open in VS Code and run with Live Server
 

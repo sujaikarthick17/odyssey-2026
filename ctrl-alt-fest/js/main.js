@@ -211,4 +211,17 @@ async function loadFeatured() {
     document.querySelector('#list-status').textContent = 'Events could not be loaded.';
   }
 }
-if (!document.querySelector('#filters')) loadFeatured();
+if (!document.querySelector('#filters')) {
+  const container = document.querySelector('#event-list');
+  // Reserve the card space now; fetch offscreen content as readers approach it.
+  // This keeps API photos from competing with the title and crown on mobile.
+  if (container && 'IntersectionObserver' in window) {
+    showLoading(container);
+    const featuredObserver = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      featuredObserver.disconnect();
+      loadFeatured();
+    }, { rootMargin: '600px' });
+    featuredObserver.observe(container);
+  } else if (container) loadFeatured();
+}
