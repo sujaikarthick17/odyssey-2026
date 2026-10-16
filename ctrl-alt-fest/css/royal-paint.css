@@ -1,7 +1,7 @@
 /* Decorative only: no existing layout or typography rules are changed. */
 .rpe-layer { position:absolute; pointer-events:none; color:#ed2015; }
 .rpe-art { position:absolute; inset:0; width:100%; height:100%; overflow:visible; z-index:2; }
-.rpe-texture,.rpe-crown { position:absolute; width:122%; height:145%; max-width:none; left:-11%; top:-31%; object-fit:fill; z-index:2; }
+.rpe-texture,.rpe-crown { position:absolute; width:122%; height:145%; max-width:none; left:-11%; top:-31%; background:url('../assets/images/royal-paint-overlay.webp') 0 0 / 100% 100% no-repeat; z-index:2; }
 .rpe-texture { clip-path:polygon(32% 0,100% 0,100% 100%,0 100%,0 62%,32% 42%); }
 .rpe-crown { clip-path:polygon(0 0,32% 0,32% 42%,0 62%); transform-origin:18% 28%; }
 .rpe-stroke { fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-dasharray:1100; stroke-dashoffset:0; animation:rpe-draw 1.6s .25s both; }
@@ -14,5 +14,6 @@
 .home-page .fest-presenter::before,.home-page .fest-presenter::after { content:''; width:clamp(25px,9vw,140px); height:1px; background:linear-gradient(90deg,transparent,#df2118); align-self:center; }
 .home-page .fest-presenter::after { transform:rotate(180deg); }
 @keyframes rpe-draw { from { stroke-dashoffset:1100; } to { stroke-dashoffset:0; } }
-@media(max-width:700px) { .rpe-texture,.rpe-crown { width:110%; left:-5%; height:132%; top:-22%; } .rpe-card-mark { display:none; } .rpe-stroke { stroke-width:1.3; } }
+@media(max-width:1200px) { .rpe-texture,.rpe-crown { background-image:url('../assets/images/royal-paint-overlay-1200.webp'); } }
+@media(max-width:700px) { .rpe-texture,.rpe-crown { width:110%; left:-5%; height:132%; top:-22%; background-image:url('../assets/images/royal-paint-overlay-640.webp'); } .rpe-card-mark { display:none; } .rpe-stroke { stroke-width:1.3; } }
 @media(prefers-reduced-motion:reduce) { .rpe-stroke { animation:none; } }

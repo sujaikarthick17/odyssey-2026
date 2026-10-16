@@ -15,7 +15,7 @@ export class RoyalPaintEffects {
     this.layer = document.createElement('div');
     this.layer.className = 'rpe-layer';
     this.layer.setAttribute('aria-hidden', 'true');
-    this.layer.innerHTML = `<img class="rpe-texture" src="assets/images/royal-paint-overlay.png" alt="" draggable="false"><img class="rpe-crown" src="assets/images/royal-paint-overlay.png" alt="" draggable="false"><svg class="rpe-art" viewBox="0 0 1000 360" preserveAspectRatio="none" fill="currentColor"><g class="rpe-droplets"></g><g class="rpe-brush"><path class="rpe-stroke" d="${strokePath}"/><path class="rpe-stroke rpe-stroke-fine" d="M35 337 Q170 330 291 341 T555 344 T802 342 T959 337"/></g></svg><span class="rpe-card-mark">K<span>&spades;</span><i></i></span><span class="rpe-card-mark rpe-card-mark-end">K<span>&hearts;</span><i></i></span>`;
+    this.layer.innerHTML = `<span class="rpe-texture"></span><span class="rpe-crown"></span><svg class="rpe-art" viewBox="0 0 1000 360" preserveAspectRatio="none" fill="currentColor"><g class="rpe-droplets"></g><g class="rpe-brush"><path class="rpe-stroke" d="${strokePath}"/><path class="rpe-stroke rpe-stroke-fine" d="M35 337 Q170 330 291 341 T555 344 T802 342 T959 337"/></g></svg><span class="rpe-card-mark">K<span>&spades;</span><i></i></span><span class="rpe-card-mark rpe-card-mark-end">K<span>&hearts;</span><i></i></span>`;
     this.host.append(this.layer);
     this.crown = this.layer.querySelector('.rpe-crown');
     this.brush = this.layer.querySelector('.rpe-brush');
