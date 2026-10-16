@@ -64,7 +64,7 @@ function reveal(node, index = 0) {
   node.classList.add('reveal-pending');
   observer.observe(node);
 }
-document.querySelectorAll('.section-heading, .manifesto-grid, .guide > div, .guide li, .lineup-hero, .suit-path, .closing-invitation h2').forEach(node => reveal(node));
+document.querySelectorAll('.section-heading, .manifesto-grid, .guide > div, .guide li, .lineup-hero, .suit-path, .closing-invitation h2, .fest-details, .home-page .royal-kicker, .home-page .royal-subtitle, .home-page .royal-side-note, .home-page .hero-invitation').forEach(node => reveal(node));
 const list = document.querySelector('#event-list');
 if (list) {
   list.querySelectorAll('.event-card').forEach(reveal);
