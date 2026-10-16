@@ -113,7 +113,7 @@ Tests cover nullable fields, ID preservation, URL rejection, prices, calendar va
 - Verified: live list and one real detail API response, CORS header, JavaScript syntax, and automated API edge cases.
 - Browser QA: homepage inspected at 390, 768 and 1440 px; lineup inspected at 390 and 1440 px. No horizontal page overflow at those widths. Live events and images loaded, and deck flip/shuffle controls worked. Full keyboard, failure-state and Lighthouse checks remain manual.
 - Obtain the organizer's confirmed currency, real registration URLs and production endpoint before a production launch.
-- No deployment was performed; this is the requested local project ready for Live Server and hackathon refinement.
+- Deployed on [Vercel](https://render72-fest1.vercel.app/) and [GitHub Pages](https://sujaikarthick17.github.io/odyssey-2026/). See the [repository README](../README.md) for live links, setup, and hosting configuration.
 
 ## Royal edition layout
 
