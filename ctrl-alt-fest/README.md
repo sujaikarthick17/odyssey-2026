@@ -1,6 +1,11 @@
 # Odyssey
 
-A buildless, responsive festival website for Odyssey, presented by Core Club at Amrita Vishwa Vidyapeetham, 20–23 October 2026. Warm ivory, ink and restrained orange accents accompany an interactive crown-themed deck and Render72 test-API integration. No framework, API key, installation or build step is required.
+A buildless, responsive festival website for Odyssey, presented by Core Lab at Amrita Vishwa Vidyapeetham, 20–23 October 2026. Warm ivory, ink and restrained orange accents accompany an interactive crown-themed deck and Render72 test-API integration. No framework, API key, installation or build step is required.
+
+## Hosting
+
+- Vercel: import the repository with its root directory set to the repository root and the framework set to Other. The root `vercel.json` publishes `ctrl-alt-fest/` as the website, so `/` serves the homepage and `/events.html` serves the lineup. No build or install command is needed.
+- GitHub Pages: select **GitHub Actions** as the Pages source in repository settings. `.github/workflows/pages.yml` tests and publishes `ctrl-alt-fest/` whenever `main` changes. The site's relative links also work under a repository URL such as `/odyssey-2026/`.
 
 ## Lightweight visitor features
 
